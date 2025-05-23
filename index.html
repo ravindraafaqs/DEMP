@@ -216,14 +216,14 @@
 	}
 	
 	.rvdtag {
-		border-radius: 3px;
+		border-radius: 3px !important;
 		display: inline-block;
 		font-family: roboto, sans-serif;
 		font-size: 12px;
 		font-weight: 500;
 		line-height: 20px;
-		margin: 4px 0 2px;
-		padding: 2px 3px 1px;
+		margin: 4px 0 2px !important;
+		padding: 2px 3px 1px !important;
 		text-transform: uppercase;
 	}
 	
@@ -291,11 +291,18 @@
 	}
 	
 	.mcnCaptionRightImageContent img {
-		/* object-fit: cover; 
-		max-height: 160px; */
-		aspect-ratio: 16 / 9;
-		margin-top: 5px !important;
+		object-fit: contain !important;
+		aspect-ratio: 16 / 9 !important;
+		/* margin-top: 5px !important; */
 	}
+
+	/* .ps-img{
+		margin:0 !important;
+		width:340px !important;
+		display:block !important;
+		object-fit: contain !important;
+		aspect-ratio: 16 / 9 !important;
+	} */
 	
 	.rvd-center {
 		display: flex;
@@ -304,6 +311,15 @@
 	}
 	
 	@media only screen and (min-width:768px) {
+
+		/* .ps-img{
+		margin:0 !important;
+		width:340px !important;
+		display:block !important;
+		object-fit: contain !important;
+		aspect-ratio: 16 / 9 !important;
+	} */
+
 		.templateContainer {
 			width: 750px!important
 		}
@@ -342,12 +358,13 @@
 		body {
 			width: 100%!important;
 			min-width: 100%!important
-		}
+		}   
 
     .mcnCaptionRightImageContent img {
-      margin-top: 5px !important;
-	  aspect-ratio: 16 / 9;
-      /* max-height: 200px; */
+      /* margin-top: 2px !important; */
+	  object-fit: contain !important;
+	  aspect-ratio: 16 / 9 !important;
+      /* max-height: 213px !important; */
     }
 
 		.mcnRetinaImage {
@@ -394,6 +411,7 @@
 			max-width: 100%!important;
 			width: 100%!important;
 		}
+
 		.mcnImageGroupContent {
 			padding: 9px!important
 		}
@@ -475,6 +493,7 @@
 	}
 	</style>
 </head>
+
 
 <body style="background-color: #eeeeee;">
 	<center>
